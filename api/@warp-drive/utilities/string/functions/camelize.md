@@ -1,0 +1,34 @@
+---
+url: /api/@warp-drive/utilities/string/functions/camelize.md
+---
+
+# &#x20;camelize()&#x20;
+
+```ts
+function camelize(str: string): string;
+```
+
+Defined in: [-private/string/transform.ts:59](https://github.com/MehulKChaudhari/warp-drive/blob/046b5e826d481c655eb9c1dd03a0fb171a65e0f3/warp-drive-packages/utilities/src/-private/string/transform.ts#L59)
+
+Returns the lowerCamelCase form of a string.
+
+```js
+import { camelize } from '@warp-drive/utilities/string';
+
+camelize('innerHTML');                   // 'innerHTML'
+camelize('action_name');                 // 'actionName'
+camelize('css-class-name');              // 'cssClassName'
+camelize('my favorite items');           // 'myFavoriteItems'
+camelize('My Favorite Items');           // 'myFavoriteItems'
+camelize('private-docs/owner-invoice');  // 'privateDocs/ownerInvoice'
+```
+
+## Parameters
+
+### str
+
+`string`
+
+## Returns
+
+`string`

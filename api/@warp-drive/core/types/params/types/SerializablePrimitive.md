@@ -1,0 +1,14 @@
+---
+url: /api/@warp-drive/core/types/params/types/SerializablePrimitive.md
+---
+
+# &#x20;SerializablePrimitive
+
+```ts
+type SerializablePrimitive = string | number | boolean | null;
+```
+
+Defined in: [warp-drive-packages/core/src/types/params.ts:8](https://github.com/MehulKChaudhari/warp-drive/blob/046b5e826d481c655eb9c1dd03a0fb171a65e0f3/warp-drive-packages/core/src/types/params.ts#L8)
+
+A JSON-serializable primitive value, suitable for use as a single
+query parameter value.

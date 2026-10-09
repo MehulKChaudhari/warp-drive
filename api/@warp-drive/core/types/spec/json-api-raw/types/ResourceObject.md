@@ -1,0 +1,29 @@
+---
+url: /api/@warp-drive/core/types/spec/json-api-raw/types/ResourceObject.md
+---
+
+# &#x20;ResourceObject\<T *extends* `string` = `string`>
+
+```ts
+type ResourceObject<T extends string = string> = 
+  | ExistingResourceObject<T>
+| NewResourceObject<T>;
+```
+
+Defined in: [warp-drive-packages/core/src/types/spec/json-api-raw.ts:334](https://github.com/MehulKChaudhari/warp-drive/blob/046b5e826d481c655eb9c1dd03a0fb171a65e0f3/warp-drive-packages/core/src/types/spec/json-api-raw.ts#L334)
+
+Represents a single {json:api} resource object, whether already
+persisted or newly created on the client.
+
+See also:
+
+* [ExistingResourceObject](ExistingResourceObject.md)
+* [NewResourceObject](NewResourceObject.md)
+
+[{json:api} Spec](https://jsonapi.org/format/#document-resource-objects)
+
+## Type Parameters
+
+### T
+
+`T` *extends* `string` = `string`
