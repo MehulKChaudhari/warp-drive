@@ -1,0 +1,20 @@
+---
+url: /api/@warp-drive/core/types/NotificationType.md
+---
+
+# &#x20;NotificationType
+
+```ts
+type NotificationType = 
+  | "attributes"
+  | "relationships"
+  | "identity"
+  | "errors"
+  | "meta"
+  | CacheOperation;
+```
+
+Defined in: [warp-drive-packages/core/src/store/-private/managers/notification-manager.ts:32](https://github.com/MehulKChaudhari/warp-drive/blob/046b5e826d481c655eb9c1dd03a0fb171a65e0f3/warp-drive-packages/core/src/store/-private/managers/notification-manager.ts#L32)
+
+The full set of notification kinds the [NotificationManager](../store/types/NotificationManager.md) can emit for a resource,
+including both [CacheOperation](CacheOperation.md)s and finer-grained field-level change notifications.
