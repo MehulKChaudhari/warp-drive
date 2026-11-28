@@ -1,0 +1,31 @@
+---
+url: /api/@warp-drive/holodeck/functions/installAdapterFor.md
+---
+
+# &#x20;installAdapterFor()
+
+```ts
+function installAdapterFor(owner: object, store: Store$1): void;
+```
+
+Defined in: [index.ts:312](https://github.com/MehulKChaudhari/warp-drive/blob/046b5e826d481c655eb9c1dd03a0fb171a65e0f3/packages/holodeck/src/index.ts#L312)
+
+Creates an adapterFor function that wraps the provided adapterFor function
+to override the adapter's \_fetchRequest method to route requests through
+the Holodeck mock server.
+
+## Parameters
+
+### owner
+
+`object`
+
+The test context object used to retrieve the test ID.
+
+### store
+
+`Store$1`
+
+## Returns
+
+`void`
